@@ -14,3 +14,7 @@ let num = 10
 //      console.log(num)
 // } while (num <= 7) 
 
+
+for (let i = 0; i <= 7; i+2) {
+    console.log(i)
+}
