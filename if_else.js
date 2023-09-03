@@ -30,4 +30,7 @@ if (num215 > 300) {
     }
 
 // ternary operator 
-    let result1 = num215 >=200 ? console.log('ternary true') : console.log('ternary false')
+                 let resTernary = (num215 >=200) ? 'ternary true' : 
+                  (num215 >=250) ? 'ternary num greater than 250' :
+                   'ternary false'
+                   console.log(resTernary)
