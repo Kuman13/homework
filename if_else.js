@@ -28,3 +28,6 @@ if (num215 > 300) {
     } else {
         console.log('code goes to the else')
     }
+
+// ternary operator 
+    let result1 = num215 >=200 ? console.log('ternary true') : console.log('ternary false')
