@@ -19,7 +19,7 @@ arr1[3] = 'New'
 // console.log(arr1.at(-3))
 async function getOnlyString(baseArr) {
 let result = [];
-resultWithUpperC = [];
+resultWithUpperC = [];//con
 
 for (let i = 0; i < baseArr.length; i++) {
     //console.log(arr1[i])
