@@ -17,7 +17,7 @@ arr1[3] = 'New'
 // console.log(lArr1)
 
 // console.log(arr1.at(-3))
-async function getOnlyString(baseArr) {
+async function getOnlyStringFromArr(baseArr) {
 let result = [];
 resultWithUpperC = [];//con
 
@@ -39,7 +39,7 @@ for (let i = 0; i < baseArr.length; i++) {
 }
 console.log(resultWithUpperC)
 }
-getOnlyString(arr1)
+//getOnlyStringFromArr(arr1)
 
 
 //console.log(resultWithUpperC)
@@ -49,12 +49,12 @@ let mArr22 = [
     [4, 10],
     [40, 50]
 ];
-//let nameShrek = mArr22 [0] [2]
-//console.log(nameShrek)
+// let nameShrek = mArr22 [0] [2]
+// console.log(nameShrek)
 
 for (let i = 0; i < mArr22.length; i++) {
     let smalArr = mArr22[i]
-    for (let y = 0; y < smallArr.length; y++) {
-        console.log("all array [" + i + "] [" + y +"] = " + smallArr[y])
+    for (let y = 0; y < smalArr.length; y++) {
+        console.log("all array [" + i + "] [" + y +"] = " + smalArr[y])
     }
 }
