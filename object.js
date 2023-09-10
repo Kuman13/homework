@@ -25,9 +25,14 @@ const testDataEnv1 = {
 }
 
 console.log(testDataEnv1.mailaddressarr[0].mail_pass)
+
+
+
+
+
 let urlForTest = testDataEnv1.server.showFullAddress()
 console.log(urlForTest)
-//console.log(testDataEnv1.server.protocol)
+console.log(testDataEnv1.server.protocol)
 
 
 
@@ -37,23 +42,21 @@ function addPropColor() {
 }
 
 
-// objMy.addPropColor = addPropColor
-// objMy.addPropColor()
-// console.log(Object.values(objMy))
+objMy.addPropColor = addPropColor
+objMy.addPropColor()
+console.log(Object.values(objMy))
 
 function getAllProp() {
     return this.age;
 }
 
-// objMy.getAllProp = getAllProp
-// testDataEnv2.getAllProp = getAllProp
+objMy.getAllProp = getAllProp
+testDataEnv2.getAllProp = getAllProp
 
-// console.log(objMy.getAllProp())
+console.log(objMy.getAllProp())
 
-// let getValFromObj = testDataEnv1.getThisProp()
-// console.log(getValFromObj)
-
-
+let getValFromObj = testDataEnv1.getThisProp()
+console.log(getValFromObj)
 
 
 
@@ -61,21 +64,40 @@ function getAllProp() {
 
 
 
-//console.log(Object.keys(testDataEnv1))
+
+
+console.log(Object.keys(testDataEnv1))
 
 testDataEnv1.pass = 'Pass1'
-//console.log(Object.keys(testDataEnv1))
-//console.log(Object.values(testDataEnv1))
+console.log(Object.keys(testDataEnv1))
+console.log(Object.values(testDataEnv1))
 
 
-// for (let data in testDataEnv1) {
-//     console.log(`${data}: ${testDataEnv1[data]}`)
-// }
+for (let data in testDataEnv1) {
+    console.log(`${data}: ${testDataEnv1[data]}`)
+}
 
-// delete testDataEnv2.url
-// console.log(testDataEnv2)
+delete testDataEnv2.url
+console.log(testDataEnv2)
 
-// console.log(Object.hasOwn(testDataEnv1, 'url'))
+console.log(Object.hasOwn(testDataEnv1, 'url'))
 
 
+function addNumberProperty(obj, propName, propValue) {
 
+    if (typeof propValue === "number") {
+
+      obj[propName] = propValue;
+
+    } else {
+
+      console.log(`Property "${propName}" can't be added. Value must be a number.`);
+
+    }
+
+  }
+
+
+  addNumberProperty(objMy, 'myNumber', 390903) //this code will add property with number value
+
+  addNumberProperty(objMy, 'myAddress', 'Street') // should be failure 
